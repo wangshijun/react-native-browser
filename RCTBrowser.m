@@ -25,6 +25,8 @@ RCT_EXPORT_METHOD(presentUrl:(NSString *)url withOptions:(NSDictionary *)options
             webVC.showDoneButton = ([obj isEqual: @(YES)]);
         } else if ([key isEqualToString:@"doneButtonTitle"]) {
             webVC.doneButtonTitle = (NSString*)obj;
+        } else if ([key isEqualToString:@"showCloseButton"]) {
+            webVC.showCloseButton = ([obj isEqual: @(YES)]);
         } else if ([key isEqualToString:@"showPageTitles"]) {
             webVC.showPageTitles = ([obj isEqual: @(YES)]);
         } else if ([key isEqualToString:@"disableContextualPopupMenu"]) {
