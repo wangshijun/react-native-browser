@@ -29,6 +29,8 @@ RCT_EXPORT_METHOD(presentUrl:(NSString *)url withOptions:(NSDictionary *)options
             webVC.showCloseButton = ([obj isEqual: @(YES)]);
         } else if ([key isEqualToString:@"showPageTitles"]) {
             webVC.showPageTitles = ([obj isEqual: @(YES)]);
+        } else if ([key isEqualToString:@"titlePlaceholder"]) {
+            webVC.titlePlaceholder = (NSString*)obj;
         } else if ([key isEqualToString:@"disableContextualPopupMenu"]) {
             webVC.disableContextualPopupMenu = ([obj isEqual: @(YES)]);
         } else if ([key isEqualToString:@"hideWebViewBoundaries"]) {
